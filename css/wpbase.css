@@ -1,0 +1,524 @@
+/* =Typography
+-------------------------------------------------------------- */
+
+cite, em, dfn { font-style: italic; }
+
+code, kbd, samp, pre, tt, var { font-family: Consolas, "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important; font-style: normal; }
+
+strong { font-weight: 700; }
+
+pre {
+	background: #fff;
+	height: auto;
+	margin-top: 20px;
+	max-width: 98%;
+	padding-left: 1em;
+}
+
+del { color: #555; text-decoration: line-through; }
+
+ins, dfn { border-bottom: 1px solid #ccc; }
+
+small, sup, sub { font-size: 85%; }
+
+abbr, acronym { font-size: 85%; letter-spacing: .1em; text-transform: uppercase; }
+
+a abbr, a acronym { border: none; }
+
+abbr[title], acronym[title], dfn[title] { border-bottom: 1px solid #ccc; cursor: help; }
+
+sup { vertical-align: super; }
+
+sub { vertical-align: sub; }
+
+.centered { text-align: center; }
+
+.goleft { text-align: left; }
+
+.goright { text-align: right; }
+
+
+img { height: auto; max-width: 100%; }
+
+
+
+/* =Forms
+-------------------------------------------------------------- */
+fieldset { margin: 0 0 1.5em; padding: 1em 2em; }
+
+legend { padding: 2px 5px; }
+
+label { display: block; font-weight: 700; padding: 2px 0; }
+
+select { height: auto; width: 70%; }
+
+textarea, .area {
+	height: auto;
+	margin: 0;
+	outline: none;
+	overflow: auto;
+	padding: 8px 10px;
+	width: 100%;
+}
+
+input, select { cursor: pointer; }
+
+input:focus, textarea:focus, area:focus { background: #fff; }
+
+input[type='text'], input[type='password'] { cursor: text; }
+
+span.error { color: #B94A48; }
+
+.form-search input {
+	padding: 4px 6px;
+	padding-left: 14px;
+	padding-left: 4px 9;
+	padding-right: 14px;
+	padding-right: 4px 9;
+}
+
+.form-search .btn { margin: 0; }
+
+/* =Tables
+-------------------------------------------------------------- */
+table { width: 100%; /*border-left 1px solid #ccc*/ /*border-top 1px solid #ccc*/ }
+
+th, td { /*border-bottom 1px solid #ddd*/ /*border-right 1px solid #ccc*/ }
+
+/* =Lists
+-------------------------------------------------------------- */
+ul { list-style-type: disc; }
+
+ul ul { list-style-type: square; }
+
+ul ul ul { list-style-type: circle; }
+
+ol, ul { list-style: none; margin: 0; padding: 0; }
+
+dt { font-weight: 400; }
+
+
+/* =Margins & Paddings
+-------------------------------------------------------------- */
+caption { padding-bottom: .8em; }
+
+legend { padding-left: .8em; padding-right: .8em; }
+
+legend+* { margin-top: 1em; }
+
+option { padding: 0 .4em; }
+
+/* =Content
+-------------------------------------------------------------- */
+#content { margin-bottom: 20px; }
+
+#content-archive { margin-bottom: 20px; }
+
+#content-blog { margin-bottom: 20px; }
+
+#content-images { margin-bottom: 20px; }
+
+#content-full { margin-bottom: 20px; }
+
+#content-sitemap { margin-bottom: 20px; }
+
+#content-sitemap a { font-size: 12px; }
+
+#content .sticky { clear: both; }
+
+
+/* =Author Meta (Author's Box)
+-------------------------------------------------------------- */
+#author-meta {
+	background: #f9f9f9;
+	border: 1px solid #d6d6d6;
+	clear: both;
+	display: block;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+#author-meta img { float: left; padding: 10px; }
+
+#author-meta p { margin-top: 5px; padding: 0 5px 0 0; }
+
+#author-meta .about-author { font-weight: 700; margin: 10px 0 0 0; }
+
+
+/* =Post
+-------------------------------------------------------------- */
+.comments-link { font-size: 12px; }
+
+#respond .form-allowed-tags { display: none !important; }
+
+#cancel-comment-reply-link { color: #900; }
+
+.post-data { clear: both; font-size: 11px; margin-top: 20px; }
+
+.post-entry { clear: both; }
+
+.post-entry .attachment-post-thumbnail { margin-bottom: 10px; }
+
+.post-meta {
+	clear: both;
+	color: #9f9f9f;
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+.post-edit {
+	clear: both;
+	display: block;
+	float: right;
+	font-size: 12px;
+	margin: 1.5em 0;
+}
+
+.post-search-terms { clear: both; }
+
+.read-more { clear: both; }
+
+.attachment-entry { clear: both; text-align: center; }
+
+/* =Symbols
+-------------------------------------------------------------- */
+.ellipsis { color: #aaa; font-size: 18px; margin-left: 5px; }
+
+/* =Widgets
+-------------------------------------------------------------- */
+.widget-wrapper { padding-bottom: 20px; }
+
+#widgets a { display: inline-block; text-decoration: none; }
+
+#widgets ul, #widgets .textwidget, #widgets .tagcloud, #widgets #searchform, #widgets #calendar_wrap { font-size: 14px; list-style: none; margin: 0 0 20px; }
+
+#widgets ul { padding: 0; }
+
+#widgets ul li { }
+
+#widgets ul li a { display: inline; text-decoration: none; }
+
+#widgets .widget-title img {
+	float: right;
+	height: 11px;
+	position: relative;
+	top: 4px;
+	width: 11px;
+}
+
+#widgets .rss-date { line-height: 18px; padding: 6px 12px; }
+
+#widgets .rssSummary { padding: 10px; }
+
+#widgets cite { font-style: normal; line-height: 18px; padding: 6px 12px; }
+
+#widgets .textwidget, #widgets .tagcloud {
+	display: block;
+	line-height: 1.5em;
+	margin: 0 0 20px;
+	word-wrap: break-word;
+}
+
+#widgets .textwidget a { }
+
+#widgets ul .children { border: none; margin: 0; padding: 0; }
+
+#widgets .author { font-weight: 700; padding-top: 4px; }
+
+.widget_archive select, #cat { display: block; margin: 20px 15px 0; }
+
+/* =Titles
+-------------------------------------------------------------- */
+
+.widget-title a { border-bottom: none; padding: 0!important; }
+
+.title-404 { color: #933; }
+
+
+/* =Pagination (pages)
+-------------------------------------------------------------- */
+.pagination {
+	clear: both;
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 10px 0;
+	padding: 5px 0;
+}
+
+.pagination a { text-decoration: none; }
+
+.pagination a:hover, .pagination a:active { }
+
+/* =Breadcrumb Lists
+-------------------------------------------------------------- */
+.breadcrumb-list { font-size: 12px; padding: 40px 0 0 0; }
+
+/*-----------------------------------------------------------------------------------*
+/* = Comments
+/*-----------------------------------------------------------------------------------*/
+#comments { clear: both; margin-top: 25px; width: 100%; }
+#comments .comments-title {
+	border-bottom: 1px dotted #d6d6d6;
+	color: #333;
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	text-transform: none;
+}
+.comment-notes { color: #666; font-family: Georgia, "Times New Roman", Times, serif; font-size: 12px; }
+.comment-list .children { margin-left: 20px; }
+.comment-list li article { position: relative; }
+.comment-author { left: 0; position: absolute; top: 0; }
+.comment-author .avatar {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	height: 40px;
+	padding: 2px;
+	width: 40px;
+}
+.comment-body {
+	-webkit-transition: all 0.4s ease;
+	-webkit-border-radius: 4px;
+	-o-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-moz-border-radius: 4px;
+	background: #ffffff;
+	border: 1px solid #EBEBEB;
+	border-radius: 4px;
+	margin-bottom: 30px;
+	margin-left: 70px;
+	padding: 15px 15px 0;
+	position: relative;
+	transition: all 0.4s ease;
+}
+.comment-body p { margin-bottom: 15px !important; }
+.comment-meta { margin-bottom: 5px; }
+.comment-meta .fn { color: #222; font-size: 12px; font-weight: bold; }
+.comment-date { color: #666; font-size: 11px; font-style: italic; }
+.comment-date a { color: #555; }
+#comments .reply {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.comment-reply-link { font-size: 10px; }
+#comments .comment-body:hover .reply { display: block; }
+#cancel-comment-reply-link {
+	color: #F00;
+	float: right;
+	font-size: 11px;
+	font-weight: normal;
+}
+#cancel-comment-reply-link:hover { color: #000; text-decoration: none; }
+#respond h3 {
+	border-bottom: 1px dotted #d6d6d6;
+	color: #333;
+	font-size: 13px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+.logged-in-as { font-size: 12px; }
+label {
+	color: #666;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0;
+}
+.comment-navigation { font-size: 12px; }
+.nav-next { text-align: right; }
+.form-allowed-tags { display: none; }
+span.required { color: #F00; }
+/*WP JetPack*/
+.comment-subscription-form { font-size: 12px; margin-bottom: 0px; margin-top: 20px; }
+.comment-subscription-form:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+.comment-subscription-form input, .comment-subscription-form label {
+	float: left;
+	margin: 0px !important;
+	margin-right: 5px !important;
+	padding: 10px;
+}
+
+input[type="submit"] {
+	-webkit-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid transparent;
+	border-color: #cccccc;
+	border-radius: 4px;
+	color: #333333;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1.428571429;
+	margin-bottom: 0;
+	padding: 6px 12px;
+	text-align: center;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+input[type="submit"]:hover {
+	background-color: #ebebeb;
+	border-color: #adadad;
+	color: #333333;
+	text-decoration: none;
+}
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone { margin: 5px 20px 20px 0; }
+
+.aligncenter, div.aligncenter { display: block; margin: 5px auto; }
+
+.alignright { float: right; margin: 5px 0 20px 20px; }
+
+.alignleft { float: left; margin: 5px 20px 20px 0; }
+
+.aligncenter { display: block; margin: 5px auto; }
+
+a img.alignright { float: right; margin: 5px 0 20px 20px; }
+
+a img.alignnone { margin: 5px 20px 20px 0; }
+
+a img.alignleft { float: left; margin: 5px 20px 20px 0; }
+
+a img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+.wp-caption {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	max-width: 96%;
+	padding: 5px 3px 10px;
+	text-align: center;
+}
+
+.wp-caption.alignnone { margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft { margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright { margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+
+img.wp-smiley { vertical-align: middle; }
+
+.more-link { float: right; margin: 10px 0; }
+
+strong.search-excerpt { background: yellow; }
+
+/* =Gallery
+-------------------------------------------------------------- */
+.gallery { margin: 0 auto 18px; }
+
+.gallery .gallery-item {
+	float: left;
+	margin-top: 0;
+	text-align: center;
+	width: 155px;
+}
+
+.gallery img { border: 1px solid #ddd; }
+
+.gallery .gallery-caption { font-size: 12px; margin: 0 0 12px; }
+
+.gallery dl { margin: 0; }
+
+.gallery br+br { display: none; }
+
+.attachment-gallery img {
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	display: block;
+	height: auto;
+	margin: 15px auto;
+	max-width: 96%;
+	padding: 5px;
+	width: auto;
+}
+
+.gallery-meta .full-size, .gallery-meta .aperture, .gallery-meta .focal-length, .gallery-meta .iso, .gallery-meta .shutter, .gallery-meta .camera { display: block; }
+
+
+/* =Alignments Extras
+-------------------------------------------------------------- */
+.left { float: left; }
+
+.right { float: right; }
+
+.center { text-align: center; }
+
+/* =Clearfix
+-------------------------------------------------------------- */
+.clearfix:after, #container:after {
+	clear: both;
+	content: "\0020";
+	display: block;
+	height: 0;
+	max-height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.clearfix, #container { display: inline-block; }
+
+*html .clearfix, *html #container { height: 1%; }
+
+.clearfix, #container { display: block; }
+
+.clear { clear: both; }
+
+/* =Begin bidirectionality settings (do not change)
+-------------------------------------------------------------- */
+BDO[DIR="ltr"] { direction: ltr; unicode-bidi: bidi-override; }
+
+BDO[DIR="rtl"] { direction: rtl; unicode-bidi: bidi-override; }
+
+[DIR="ltr"] { direction: ltr; unicode-bidi: embed; }
+
+[DIR="rtl"] { direction: rtl; unicode-bidi: embed; }
+
+/* =Media Print
+-------------------------------------------------------------- */
+@media print {
+	
+		h1 { page-break-before: always; }
+	
+		h1,  h2,  h3,  h4,  h5,  h6 { page-break-after: avoid; }
+	
+		ul,  ol,  dl { page-break-before: avoid; }
+}
