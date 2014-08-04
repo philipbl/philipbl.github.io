@@ -1,4 +1,32 @@
 ---
-layout: default
-title: Philip Lundrigan
+layout: basic
 ---
+
+{% for post in site.posts %}
+    <article class="post">
+    {% cycle '<div id="grey">', '<div id="white">' %}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <section class="post-meta">
+                        <p><bd><time class="post-date">{{ page.date | date: "%B %d, %Y" }}</time></bd></p>
+                    </section><!-- end of .post-meta -->
+
+                    <header>
+                        <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
+                    </header>
+
+                    <section class="post-entry">
+                        {{ post.content | more: "excerpt" }}
+
+                        <!-- <p><a href="{{ post.url }}" class="readmore">Continue Reading… </a></p> -->
+
+                    </section><!-- end of .post-entry -->
+
+                </div>
+            </div><!-- end of .row -->
+        </div> <!-- end of .container -->
+    </div>
+</article>
+{% endfor %}
+
