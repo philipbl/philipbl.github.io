@@ -1,0 +1,7 @@
+- name: Test
+  description: Here is a description of a project
+  url: and a URL
+
+- name: Another Project
+  description: 1
+  url: 2
