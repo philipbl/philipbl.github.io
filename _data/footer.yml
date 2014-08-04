@@ -1,0 +1,11 @@
+footer1:
+    title: Foo
+    content: Bar
+
+footer2:
+    title: Test
+    content: Here is a longer test.
+
+footer3:
+    title: One more
+    content: Here is *one* more test.
