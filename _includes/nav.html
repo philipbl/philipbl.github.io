@@ -13,12 +13,17 @@
             </div>
             <div class="navbar-collapse collapse navbar-responsive-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="/work">Work</a></li>
+                    {% for nav_item in site.data.nav.items %}
+                        <li><a href="{{ nav_item.url }}">{{ nav_item.text }}</a></li>
+                    {% endfor %}
+<!--                     <li><a href="/work">Work</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/blog">Blog</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="/">Contact</a></li> -->
                 </ul>
             </div>
+
+
         </div>
     </div>
 </nav>
