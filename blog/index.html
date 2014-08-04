@@ -16,11 +16,13 @@ layout: basic
                         <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }}</h3></a>
                     </header>
 
-                    <section class="post-entry">
-                        {{ post.content | more: "excerpt" }}
-
-                        <!-- <p><a href="{{ post.url }}" class="readmore">Continue Reading… </a></p> -->
-
+                    <section class="post-entry post-content-truncate">
+                        {% if post.content contains "<!-- more -->" %}
+                            {{ post.content | split:"<!-- more -->" | first % }}
+                            <a href="{{ post.url }}" class="readmore">Continue Reading… </a>
+                        {% else %}
+                            {{ post.content }}
+                        {% endif %}
                     </section><!-- end of .post-entry -->
 
                 </div>
