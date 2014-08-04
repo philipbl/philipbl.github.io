@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class="post-meta">
+    <p><bd><time class="post-date">{{ page.date | date: "%B %d, %Y" }}</time></bd></p>
+</section><!-- end of .post-meta -->
+
+<header>
+    <h3 class="post-title">{{ page.title }}</h3>
+</header>
+
+<section class="post-entry post-content-truncate">
+    {{ content }}
+
+</section><!-- end of .post-entry -->
