@@ -7,6 +7,8 @@ tags: [Projects]
 ---
 I have been using [SearchLink][8145-001] for a few months and love it. If you have never used it, you should read more about it on [Brett Terpstra's Project Page][8145-001]. To summarize, SearchLink allows you to write Markdown links using search terms instead of a URL. This script then goes through, uses its magic to search for those terms online and switches them out with the correct URL. It is a pretty powerful script and helps save a lot of time when you are writing in Markdown.
 
+<!-- more -->
+
 A new iPad text editor app recently came out called [Editorial][editorial-app]. In my opinion, this is the best text editor for the iPad to date. There have already been several great [reviews][8145-002] on it, so I will spare you the details. I just want to talk about one amazing feature and how it relates to SearchLink--it has the ability to run Python inside of Editorial. This makes me dance for joy! iPad apps always seem so limited and constrained; it feels good to think that there could be an iPad app that will let me run Python code for some advanced automation. My first thought was how awesome it would be to have SearchLink on the iPad. The problem is that SearchLink is written in Ruby and Editorial only works with Python. I know and love Python, so decided to take on the challenge of porting it over to Python and see if Editorial could handle it. 
 
 Over the weekend, I was able to port SearchLink from Ruby to Python smoothly. There might be a few bugs in the Python version, but so far it is looking pretty good. I did all of my programming and testing on my computer and as a last step, copied it over to Editorial. Everything worked perfectly -- SearchLink acted exactly how it would have on a computer. 

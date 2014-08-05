@@ -1,6 +1,9 @@
 footer1:
-    title: Foo
-    content: Bar
+    title: My Links
+    content: |
+        <a href="mailto:philipbl@cs.utah.edu">philipbl@cs.utah.edu</a>
+        <br>
+        github: <a href="https://github.com/philipbl" alt="philipbl's github page">philipbl</a>
 
 footer2:
     title: Test

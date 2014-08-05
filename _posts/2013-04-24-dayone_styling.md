@@ -9,7 +9,7 @@ I love [Day One][dayone]. It is by far my favorite journaling app. I use it to t
 
 One thing that I wish Day One would add is customizable styling. Sometimes it is nice to change how the different headers look and their sizes or what colors are being used for links. After digging around, I found that there are some ways you can change the styling of Day One, but it involves modifying the contents of the app.
 
-<!--more-->
+<!-- more -->
 
 To change the styling, you need to know a little about CSS. Since entries in Day One use [Markdown][md] which eventually gets boiled down to HTML, CSS is used to style an entry. The file that you want to change is `/Applications/Day One.app/Contents/Resources/DayOne.css`. From what I can tell, this file controls most of the styling for an entry. The easiest way to get this directory is to use Terminal.app,
 
