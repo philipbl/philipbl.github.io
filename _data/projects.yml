@@ -1,5 +1,5 @@
 - title: Y-Clops
-  image: /img/yclops_thumb_640px.png
+  image: /assets/images/yclops_thumb_640px.png
   source: http://yclops.ece.byu.edu/home.html
   description: >
     Y-Clops is an autonomous robot that uses sensors (camera, GPS, compass, and
@@ -8,10 +8,11 @@
     ground up. My main responsibility was programming the camera. I used
     [OpenCV][1] to process the image data in real time to find obstacles.
 
+
     [1]: http://opencv.willowgarage.com/wiki/
 
 - title: Redirect Attack
-  image: /img/redirect_attack.png
+  image: /assets/images/redirect_attack.png
   source: https://github.com/markthueson/network-security
   description: >
     I worked with a group of students to develop a wireless security exploit.
@@ -21,16 +22,17 @@
     that the website is not https, but we suspect that many normal users would
     not notice that. To find out more, you can read our [report][1].
 
+
     [1]: redirect-attack-report.pdf
 
 - title: Python Compiler
-  image: /img/python-logo-flattened.png
+  image: /assets/images/python-logo-flattened.png
   publish: false
   description: >
     No description
 
 - title: Day One Lightroom Plug-in
-  image: /img/lr3.png
+  image: /assets/images/lr3.png
   source: https://github.com/philipbl/Day-One-Lightroom-Plugin
   description: >
     A plug-in that allows you to export pictures from Lightroom into Day One.
@@ -39,17 +41,18 @@
     iCloud, Dropbox, and any other location.
 
 - title: Blog Redesign
-  image: /img/bridget-blog.png
+  image: /assets/images/bridget-blog.png
   source: http://bridgetandphilly.tumblr.com
   description: >
     A complete redesign of my wife's blog.
 
 - title: Day One Quick Look Plug-in
-  image: /img/do-ql.png
+  image: /assets/images/do-ql.png
   source: https://github.com/philipbl/Day-One-QuickLook
   description: >
     A Quick Look Plug-in that allows you to look at Day One entries
     (`.doentry`) using Quick Look. It is based on Brett Terpstra's
     [MultiMarkdown Quick Look with Style][1].
+
 
     [1]: https://github.com/ttscoff/MMD-QuickLook

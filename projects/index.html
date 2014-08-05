@@ -2,7 +2,17 @@
 layout: default
 ---
 <div class="col-lg-8 col-lg-offset-2 centered">
-    {% for project in site.data.projects %}
-        {{ project }}
+    {% for project in site.data.projects reversed %}
+    {% if project.publish != false %}
+        {% cycle nil, nil, nil, '<div class="clearfix"></div>'%}
+
+        <div class="col-sm-4">
+            <a href="{{ project.source }}"><img src="{{ project.image }}" /></a>
+            <p>{{ project.title }}</p>
+            <small>{{ project.description | markdownify }}</small>
+        </div>
+
+        <hr class="visible-xs">
+    {% endif %}
     {% endfor %}
 </div>
