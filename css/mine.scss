@@ -26,10 +26,14 @@
 }
 
 small p {
-  font-size: 12px;
-  line-height: 17px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .navbar-inverse .navbar-collapse {
     border: none;
+}
+
+.spacing {
+  margin-bottom: 50px;
 }

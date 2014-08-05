@@ -4,13 +4,15 @@ layout: default
 <div class="col-lg-8 col-lg-offset-2 centered">
     {% for project in site.data.projects reversed %}
     {% if project.publish != false %}
-        {% cycle nil, nil, nil, '<div class="clearfix"></div>'%}
+        {% cycle nil, nil, nil, '<div class="clearfix visible-md visible-lg spacing"></div>' %}
 
-        <div class="col-sm-4">
+        <div class="col-md-4 col-sm-6">
             <a href="{{ project.source }}"><img src="{{ project.image }}" /></a>
-            <p>{{ project.title }}</p>
+            <h4>{{ project.title }}</h4>
             <small>{{ project.description | markdownify }}</small>
         </div>
+
+        {% cycle nil, '<div class="clearfix visible-sm spacing"></div>' %}
 
         <hr class="visible-xs">
     {% endif %}
