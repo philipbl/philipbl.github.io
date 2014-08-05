@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Day One Lightroom Plug-in
 date: 2013-05-11 15:10:00 MST
 categories : [articles]

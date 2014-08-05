@@ -2,5 +2,7 @@
 layout: default
 ---
 <div class="col-lg-8 col-lg-offset-2 centered">
-    A description of my work experience.
+    {% for work in site.data.work %}
+        {{ work }}
+    {% endfor %}
 </div>

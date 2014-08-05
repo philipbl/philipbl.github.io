@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Day One Custom Styling
 date: 2013-04-24 10:51:00 MST
 categories : [articles]

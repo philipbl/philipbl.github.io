@@ -1,11 +1,13 @@
 ---
-layout: article
+layout: post
 title: PNG Converter (Updated 02-22-2014)
 date: 2014-01-11 10:00:00 MST
 categories : [articles]
 root: ../../../../..
 ---
 I was recently downloading my iPhone pictures and adding them to Lightroom. Lightroom can't handle `PNG` files, which occur occasionally in my camera roll when I take a screenshot. It is easy to convert them into `JPG`s but I noticed that the creation and modified date are set to the current date and time, not the date and time that the `PNG` was created. This is typically not a problem except that it changes the ordering and flow of my iPhone pictures. I don't want a bunch of screenshots from my iPhone all clumped together showing that they were just created. I decided to write a small bash script to fix this.
+
+<!-- more -->
 
 Like I said before, converting from `PNG` to `JPG` is trivial with [ImageMagick](http://www.imagemagick.org/script/index.php):
 

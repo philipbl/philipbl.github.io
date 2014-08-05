@@ -1,7 +1,55 @@
-- name: Test
-  description: Here is a description of a project
-  url: and a URL
+- title: Y-Clops
+  image: /img/yclops_thumb_640px.png
+  source: http://yclops.ece.byu.edu/home.html
+  description: >
+    Y-Clops is an autonomous robot that uses sensors (camera, GPS, compass, and
+    lidar) and path planning to navigate an obstacle course. I was one of nine
+    students on the team who designed, built, and programmed Y-Clops from the
+    ground up. My main responsibility was programming the camera. I used
+    [OpenCV][1] to process the image data in real time to find obstacles.
 
-- name: Another Project
-  description: 1
-  url: 2
+    [1]: http://opencv.willowgarage.com/wiki/
+
+- title: Redirect Attack
+  image: /img/redirect_attack.png
+  source: https://github.com/markthueson/network-security
+  description: >
+    I worked with a group of students to develop a wireless security exploit.
+    This exploit (called redirect attack), allows a man in the middle to block
+    a redirect from an insecure website to a secure website and instead sent
+    their own web page. The URL will stay the same, the only difference being
+    that the website is not https, but we suspect that many normal users would
+    not notice that. To find out more, you can read our [report][1].
+
+    [1]: redirect-attack-report.pdf
+
+- title: Python Compiler
+  image: /img/python-logo-flattened.png
+  publish: false
+  description: >
+    No description
+
+- title: Day One Lightroom Plug-in
+  image: /img/lr3.png
+  source: https://github.com/philipbl/Day-One-Lightroom-Plugin
+  description: >
+    A plug-in that allows you to export pictures from Lightroom into Day One.
+    It will use the picture's meta data (such as time taken, location, and
+    tags) to create an entry inside of Day One. It supports journals located in
+    iCloud, Dropbox, and any other location.
+
+- title: Blog Redesign
+  image: /img/bridget-blog.png
+  source: http://bridgetandphilly.tumblr.com
+  description: >
+    A complete redesign of my wife's blog.
+
+- title: Day One Quick Look Plug-in
+  image: /img/do-ql.png
+  source: https://github.com/philipbl/Day-One-QuickLook
+  description: >
+    A Quick Look Plug-in that allows you to look at Day One entries
+    (`.doentry`) using Quick Look. It is based on Brett Terpstra's
+    [MultiMarkdown Quick Look with Style][1].
+
+    [1]: https://github.com/ttscoff/MMD-QuickLook

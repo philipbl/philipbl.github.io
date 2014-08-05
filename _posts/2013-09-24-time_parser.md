@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: Time Parser
 date: 2013-09-24 14:13:00 MST
 categories : [articles]
@@ -10,6 +10,7 @@ Since I started working at [Xandem][8888-001], I have to keep track of the hours
 
 I decided to create a script that could take care of this repetitive task for me. As I thought more about how to accomplish this, I noticed that I have a specific way of writing the time that I worked. On a normal day, my time worked might look something like "8:05 AM to 4:12 PM". If I take a lunch, then it might look like "8:05 AM to 4:12 PM - 45 min". I wanted this script to be flexible enough that I could handle any combination of time ranges ("8:05 AM to 4:12 PM") and time adjustments (+/- 45 min). As I thought about how I would parse this time text, some of the things I learned from my [compilers class][might] started coming back to me. I decided that I would try to implement the ideas from that class (as well as I could remember).
 
+<!-- more -->
 
 ### Grammar
 First, I needed to come up with a grammar for my "time language". I wrote out a bunch of examples of how I would want to use this mini-language and decided on this[^1] :

@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: SearchLink for Python and Editorial
 date: 2013-08-19 08:10:00 MST
 categories : [articles]
