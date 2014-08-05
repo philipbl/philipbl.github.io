@@ -1,0 +1,21 @@
+---
+layout: default
+title: Publications
+root: ..
+---
+<section id="resume" class="resume">
+    <div class="row">
+        <div class="col-xs-12">
+            <!---------- PUBLICATIONS ---------->
+            {% for post in site.categories.publications %}
+                <div class="resume-item">
+                    <h3>{{ post.title }}
+                        <small>{{ post.subtitle }}</small>
+                        <span class="label label-faded pull-right">{{ post.worked_date }}</span>
+                    </h3>
+                    {{ post.content }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
