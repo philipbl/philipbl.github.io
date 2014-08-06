@@ -37,3 +37,20 @@ small p {
 .spacing {
   margin-bottom: 50px;
 }
+
+.post-container {
+    padding: 15px;
+}
+
+.resume-container {
+    position: relative;
+}
+
+li.active a {
+    color: #222222;
+}
+
+.nav > li > a:hover {
+    color: #222222;
+    background: none;
+}

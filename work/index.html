@@ -1,56 +1,98 @@
 ---
 layout: basic
+body-tag: data-spy="scroll" data-target=".navbar"
 ---
-<div class="container">
-<div class="col-lg-8 col-lg-offset-2">
-        <p>Download my full CV.</p>
-</div>
-</div>
-
-{% for edu in site.data.education reversed %}
-    <article class="post">
-        {% cycle '<div id="grey">', '<div id="white">' %}
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <section class="post-meta">
-                            <p><bd><time class="post-date">{{ edu.worked_date }}</time></bd></p>
-                        </section><!-- end of .post-meta -->
-
-                        <header>
-                            <h3 class="post-title">{{ edu.title }}</h3>
-                        </header>
-
-                        <section class="post-entry post-content-truncate">
-                            {{ edu.description | markdownify }}
-                        </section><!-- end of .post-entry -->
-                    </div>
-                </div><!-- end of .row -->
-            </div> <!-- end of .container -->
+<div class="container resume-container" >
+    <div class="row">
+        <div class="col-sm-3 hidden-xs">
+            <div class="affix navbar">
+                <ul class="nav">
+                    <li class="active"><a href="#work">Work</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#cv">CV</a></li>
+                </ul>
+            </div>
         </div>
-    </article>
-{% endfor %}
+        <div class="col-sm-9">
+            <div id="work">
+                {% for item in site.data.work reversed %}
+                    <article class="post">
+                        {% cycle '<div id="grey">', '<div id="white">' %}
+                            <div class="post-container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <section class="post-meta">
+                                            <p><bd><time class="post-date">{{ item.worked_date }}</time></bd></p>
+                                        </section><!-- end of .post-meta -->
 
-{% for work in site.data.work reversed %}
-    <article class="post">
-        {% cycle '<div id="grey">', '<div id="white">' %}
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <section class="post-meta">
-                            <p><bd><time class="post-date">{{ work.worked_date }}</time></bd></p>
-                        </section><!-- end of .post-meta -->
+                                        <header>
+                                            <h3 class="post-title">{{ item.title }} <small>{{ item.company }}</small></h3>
+                                        </header>
 
-                        <header>
-                            <h3 class="post-title">{{ work.title }} <small>{{ work.company }}</small></h3>
-                        </header>
+                                        <section class="post-entry post-content-truncate">
+                                            {{ item.description | markdownify }}
+                                        </section><!-- end of .post-entry -->
+                                    </div>
+                                </div><!-- end of .row -->
+                            </div> <!-- end of .container -->
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+            <div id="education">
+                {% for item in site.data.education reversed %}
+                    <article class="post">
+                        {% cycle '<div id="grey">', '<div id="white">' %}
+                            <div class="post-container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <section class="post-meta">
+                                            <p><bd><time class="post-date">{{ item.worked_date }}</time></bd></p>
+                                        </section><!-- end of .post-meta -->
 
-                        <section class="post-entry post-content-truncate">
-                            {{ work.description | markdownify }}
-                        </section><!-- end of .post-entry -->
-                    </div>
-                </div><!-- end of .row -->
-            </div> <!-- end of .container -->
+                                        <header>
+                                            <h3 class="post-title">{{ item.title }} <small>{{ item.company }}</small></h3>
+                                        </header>
+
+                                        <section class="post-entry post-content-truncate">
+                                            {{ item.description | markdownify }}
+                                        </section><!-- end of .post-entry -->
+                                    </div>
+                                </div><!-- end of .row -->
+                            </div> <!-- end of .container -->
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+            <div id="publications">
+                {% for item in site.data.publications reversed %}
+                    <article class="post">
+                        {% cycle '<div id="grey">', '<div id="white">' %}
+                            <div class="post-container">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <section class="post-meta">
+                                            <p><bd><time class="post-date">{{ item.worked_date }}</time></bd></p>
+                                        </section><!-- end of .post-meta -->
+
+                                        <header>
+                                            <h3 class="post-title">{{ item.title }} <small>{{ item.company }}</small></h3>
+                                        </header>
+
+                                        <section class="post-entry post-content-truncate">
+                                            {{ item.description | markdownify }}
+                                        </section><!-- end of .post-entry -->
+                                    </div>
+                                </div><!-- end of .row -->
+                            </div> <!-- end of .container -->
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+            <div id="cv">
+                <p><a href="/assets/cv.pdf">Download my CV</a><p>
+            </div>
         </div>
-    </article>
-{% endfor %}
+    </div>
+</div>

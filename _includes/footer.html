@@ -17,7 +17,12 @@
                         <h4>{{ site.data.footer.footer2.title }}</h4>
                     </div>
                     <div class="textwidget">
-                        {{ site.data.footer.footer2.content | markdownify }}
+                        <p>
+                            {% for post in site.posts limit:3 %}
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                                <br>
+                            {% endfor %}
+                        </p>
                     </div>
                 </div>
             </div>

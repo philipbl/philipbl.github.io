@@ -2,7 +2,8 @@
   subtitle: FPT 2010
   worked_date: December 10, 2010
   description: >
-      > Designer productivity for FPGA design is significantly limited by the
+      <blockquote>
+      Designer productivity for FPGA design is significantly limited by the
       time-consuming nature of the FPGA compilation process (synthesis, map,
       placement, and routing). However, experimentation on alternative CAD
       tools for this purpose for Xilinx devices has been somewhat limited. This
@@ -11,6 +12,7 @@
       which a complete CAD system can be based. The demonstration portion of
       this paper will show prototypes of representative CAD tools which can be
       easily built on top of the RapidSmith system.
+      </blockquote>
 
       <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5681429&contentType=Conference+Publications">Source</a>
 
@@ -18,7 +20,8 @@
   subtitle: FCCM 2011
   worked_date: May 3, 2011
   description: >
-      > The FPGA compilation process (synthesis, map, place, and route) is a
+      <blockquote>
+      The FPGA compilation process (synthesis, map, place, and route) is a
       time consuming task that severely limits designer productivity.
       Compilation time can be reduced by saving implementation data in the form
       of hard macros. Hard macros consist of previously synthesized, placed and
@@ -32,6 +35,7 @@
       2-4X slower than those produced by Xilinx. These speedups are obtained on
       a wide range of benchmark designs with some exceeding 18,000 slices on a
       Virtex 4 LX200.
+      </blockquote>
 
       <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=5771262&contentType=Conference+Publications">Source</a>
 
@@ -39,7 +43,8 @@
   subtitle: FPL 2011
   worked_date: September 7, 2011
   description: >
-      > Creating CAD tools for commercial FPGAs is a difficult task. Closed
+      <blockquote>
+      Creating CAD tools for commercial FPGAs is a difficult task. Closed
       proprietary device databases and unsupported interfaces are largely to
       blame for the lack of CAD research found on commercial architectures
       versus hypothetical architectures. This paper formally introduces
@@ -50,6 +55,7 @@
       Xilinx devices. RapidSmith alleviates several of the difficulties of
       using XDL and this work demonstrates the kinds of research facilitated by
       removing such challenges.
+      </blockquote>
 
       <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6044842&contentType=Conference+Publications">Source</a>
 
@@ -57,7 +63,8 @@
   subtitle: MASS 2012
   worked_date: October 9, 2012
   description: >
-      > Extensive research has been performed on improving TCP performance in
+      <blockquote>
+      Extensive research has been performed on improving TCP performance in
       multi-hop wireless networks, but there have been relatively few
       experimental evaluations of this work. To make it easier to conduct
       research in this area, we are releasing WiFu, an open-source toolkit for
@@ -72,6 +79,7 @@
       conduct experiments with several wireless transport protocols, and show
       that the performance of some protocols differs significantly from
       previously reported results.
+      </blockquote>
 
       <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6502529&contentType=Conference+Publications&matchBoolean%3Dtrue%26rowsPerPage%3D30%26searchField%3DSearch_All%26queryText%3D%28p_Title%3A%22WiFu%3A+A+Composable+Toolkit+for+Experimental+Wireless+Transport+Protocols%22%29">Source</a>
 

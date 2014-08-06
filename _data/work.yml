@@ -43,6 +43,7 @@
     to augment existing database systems. Built the Solr index and ran benchmarks to see
     how it performed compared to alternative approaches.
 
+
     [solr]: http://lucene.apache.org/solr/
 
 

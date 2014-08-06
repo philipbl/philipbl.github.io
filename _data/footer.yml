@@ -6,8 +6,8 @@ footer1:
         github: <a href="https://github.com/philipbl" alt="philipbl's github page">philipbl</a>
 
 footer2:
-    title: Test
-    content: Here is a longer test.
+    title: Recent Posts
+    content: This is not being used...
 
 footer3:
     title: One more
