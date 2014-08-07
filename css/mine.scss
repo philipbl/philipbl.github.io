@@ -55,6 +55,32 @@ li.active a {
     background: none;
 }
 
+.resume-nav.affix-top {
+   margin-top: 25px;
+}
+
 .resume-nav.affix {
     top: 50px;
+}
+
+.grey {
+    background-color: #f2f2f2;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    &.less {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+
+.white {
+    background-color: #ffffff;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    &.less {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
 }
