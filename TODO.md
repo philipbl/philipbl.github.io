@@ -2,3 +2,4 @@
 - Make project page bigger at bigger screens
 - Write text for home page
 - Write text for about page
+- Add CNAME file
