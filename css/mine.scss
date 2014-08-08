@@ -84,3 +84,11 @@ li.active a {
         padding-top: 10px;
     }
 }
+
+// Remove some blank space for small screen displays
+@media (max-width: 767px) {
+    .navbar-inverse {
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+}
