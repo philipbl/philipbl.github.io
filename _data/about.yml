@@ -1,3 +1,20 @@
-title: About Phil!
-description: |
-    A little about myself
+title: About Phil
+personal:
+    image1: http://maps.googleapis.com/maps/api/staticmap?center=42.714728,-116.998672&size=350x400&zoom=5&markers=|Santa%20Cruz,%20CA|Redmond,WA|Santa%20Rosa,CA|Salt%20Lake%20City,%20UT
+    description1: >
+        I was born in the sunny city of Santa Cruz, CA. I have many childhood memories playing on the beach and going to the [board walk][1]. It was a great place to grow up. When I was 8 years old, my family moved to Redmond, WA. Though quite a bit different than Santa Cruz, I loved it. Possibliy out of necessity, I quickly grew to love cloudy, rainy days and still do to this day. Living in Microsoft's home town gave me a passion for technology. I took my first programming class in high school (with some impromptu Java courses from my Dad) and the rest is history.
+
+
+        After graduating highschool, I went to [Brigham Young University][2] (BYU). I went for a year, and then served a full time mission for [the Church of Jesus Christ of Latter-day Saints][3] (LDS) in Santa Rosa, CA for two years. After my mission, I returned to BYU and got my degree in Computer Engineering with a minor in Computer Science.
+
+
+        [1]: http://www.beachboardwalk.com
+
+        [2]: https://www.byu.edu
+
+        [3]: https://www.lds.org/?lang=eng
+
+
+    image2: https://farm3.staticflickr.com/2924/13932787411_3a5c2e6f1d_b_d.jpg
+    description2: >
+        Got married

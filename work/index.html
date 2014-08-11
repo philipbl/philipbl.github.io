@@ -7,14 +7,18 @@ body-tag: data-spy="scroll" data-target=".navbar"
         <div class="col-sm-3 hidden-xs">
             <div class="navbar resume-nav" data-spy="affix" data-offset-top="160" data-offset-bottom="338">
                 <ul class="nav">
-                    <li class="active"><a href="#work">Work</a></li>
+                    <li class="active"><a href="#cv">CV</a></li>
+                    <li><a href="#work">Work</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#publications">Publications</a></li>
-                    <li><a href="#cv">CV</a></li>
                 </ul>
             </div>
         </div>
         <div class="col-sm-9">
+            <h1 class="center">CV</h1>
+            <div id="cv">
+                <p><a href="/assets/cv.pdf">View my full CV.</a><p>
+            </div>
             <h1 id="work" class="center">Work</h1>
             <div>
                 {% for item in site.data.work reversed %}
@@ -92,10 +96,6 @@ body-tag: data-spy="scroll" data-target=".navbar"
                         </div>
                     </article>
                 {% endfor %}
-            </div>
-            <h1 class="center">CV</h1>
-            <div id="cv">
-                <p><a href="/assets/cv.pdf">View my full CV</a><p>
             </div>
         </div>
     </div>
