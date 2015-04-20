@@ -57,7 +57,6 @@
     interfaces, and database storage.
 
 
-
 - title: Wireless Research
   company: Xandem Technology
   worked_date: July 2013 – December 2013
@@ -67,7 +66,6 @@
     using machine learning. Worked with raw wireless data to develop features for machine
     learning algorithm. Conducted experiments to evaluate and measure the accuracy of localization
     algorithm. Demonstrated working prototype to potential customers.
-
 
 
 - title: Research Assistant
@@ -80,10 +78,16 @@
     associations. Researched state of the art wireless protocols 802.11k and 802.11ai.
 
 
-
 - title: Network Scientist Intern
   company: Raytheon BBN
   worked_date: May 2014 – August 2014
   description: >
-      Put description here.
+    Worked on DARPA's Content-Based Mobile Edge Networking (CBMEN) project
+    using Android phones. Improved, measured, and tested the design of the
+    basic ad hoc networking functionality. Thoroughly studied the benefits of
+    using asynchronous I/O compared to synchronous I/O for all network
+    communication. Developed new method for managing multiple TCP connections
+    with neighboring nodes. Built Android application and deployed on 15
+    devices in the field to measure the improvements. Collaborated closely with
+    three other researchers to improve various components of the system.
 
