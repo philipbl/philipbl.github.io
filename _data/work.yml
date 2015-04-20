@@ -2,18 +2,23 @@
   company: Amaze Entertainment
   worked_date: May 2006 – August 2006
   description: >
-    Amaze Entertainment provided me with a opportunity to work with real developers
-    and see how teams function at an early age. While working there, I helped to test
-    two games, Lord of the Rings: Tactics and Bionical.
+    Amaze Entertainment provided me with a opportunity to work with real
+    developers and see how teams function at an early age. While working there,
+    I helped to test two games, [Lord of the Rings: Tactics][lotr] and
+    [Bionicle Heroes][bionicle].
+
+
+    [lotr]: http://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_Tactics
+    [bionicle]: http://www.ign.com/articles/2006/12/14/bionicle-heroes-review-4
 
 
 - title: Volunteer
   company: The Church of Jesus Christ of Latter-day Saints
   worked_date: June 2007 – June 2009
   description: >
-    Worked with groups on goal setting, teaching, and communicating, while resolving
-    conflicts among individuals within these groups. Supported several communities by
-    volunteering at various nonprofit organizations.
+    Worked with groups on goal setting, teaching, and communicating, while
+    resolving conflicts among individuals within these groups. Supported
+    several communities by volunteering at various nonprofit organizations.
 
 
 - title: Research Assistant
@@ -21,27 +26,30 @@
   worked_date: April 2010 – April 2011
   description: >
     Helped develop HMFlow framework for rapid prototyping on FPGAs, which uses
-    pre-synthesized hard macro blocks to quickly build designs, 100 times faster
-    than conventional FPGA workflows. Designed and developed fast loading and saving of
-    serialized hard macro blocks. Created complex data structures to model FPGA designs.
+    pre-synthesized hard macro blocks to quickly build designs, 100 times
+    faster than conventional FPGA workflows. Designed and developed fast
+    loading and saving of serialized hard macro blocks. Created complex data
+    structures to model FPGA designs.
 
 
 - title: Research Assistant
   company: Internet Research Lab, Brigham Young University
   worked_date: April 2011 – April 2012
   description: >
-    Contributed to framework, WiFu, for experimenting on wireless transport protocols.
-    Designed new TCP variant protocol specific for wireless mesh networks. Used wireless
-    mesh network to run experiments and benchmark performance of different protocols.
+    Contributed to framework, WiFu, for experimenting on wireless transport
+    protocols.  Designed new TCP variant protocol specific for wireless mesh
+    networks. Used wireless mesh network to run experiments and benchmark
+    performance of different protocols.
 
 
 - title: Software Engineering Intern
   company: Ancestry.com
   worked_date: April 2012 – August 2012
   description: >
-    Researched an alternative way to store and search terabytes of data using [Apache Solr][solr]
-    to augment existing database systems. Built the Solr index and ran benchmarks to see
-    how it performed compared to alternative approaches.
+    Researched an alternative way to store and search terabytes of data using
+    [Apache Solr][solr] to augment existing database systems. Built the Solr
+    index and ran benchmarks to see how it performed compared to alternative
+    approaches.
 
 
     [solr]: http://lucene.apache.org/solr/
@@ -51,31 +59,22 @@
   company: Software Practice (CS 3500), University of Utah
   worked_date: August 2012 – January 2013
   description: >
-    Helped and taught students basic programming skills in C# such as basic design
-    patterns, testing, debugging, and performance profiling. Worked with groups of
-    students to build large programs involving socket programming, graphical user
-    interfaces, and database storage.
+    Helped and taught students basic programming skills in C# such as basic
+    design patterns, testing, debugging, and performance profiling. Worked with
+    groups of students to build large programs involving socket programming,
+    graphical user interfaces, and database storage.
 
 
 - title: Wireless Research
   company: Xandem Technology
   worked_date: July 2013 – December 2013
   description: >
-    Researched fall detection and localization using wireless sensor network for elderly care.
-    Led development of small team to implemented real-time room-level localization algorithm
-    using machine learning. Worked with raw wireless data to develop features for machine
-    learning algorithm. Conducted experiments to evaluate and measure the accuracy of localization
-    algorithm. Demonstrated working prototype to potential customers.
-
-
-- title: Research Assistant
-  company: Advanced Networked Systems Research (ANSR) Group, University of Utah
-  worked_date: January 2013 – present
-  description: >
-    **Wireless Association**: Researching associations of wireless clients to access points.
-    Developed and implementing algorithm to improve and speed up associations in dense
-    wireless networks. Working with USRP to test new signal processing methods to speed up
-    associations. Researched state of the art wireless protocols 802.11k and 802.11ai.
+    Researched fall detection and localization using wireless sensor network
+    for elderly care.  Led development of small team to implemented real-time
+    room-level localization algorithm using machine learning. Worked with raw
+    wireless data to develop features for machine learning algorithm. Conducted
+    experiments to evaluate and measure the accuracy of localization algorithm.
+    Demonstrated working prototype to potential customers.
 
 
 - title: Network Scientist Intern
@@ -91,3 +90,20 @@
     devices in the field to measure the improvements. Collaborated closely with
     three other researchers to improve various components of the system.
 
+
+- title: Research Assistant
+  company: Advanced Networked Systems Research (ANSR) Group, University of Utah
+  worked_date: January 2013 – present
+  description: >
+    **Wireless Association:** Researching associations of wireless clients to
+    access points. Developed and implementing algorithm to improve and speed up
+    associations in dense wireless networks. Working with USRP to test new
+    signal processing methods to speed up associations. Researched state of the
+    art wireless protocols 802.11k and 802.11ai.
+
+
+- title: Network Scientist Intern
+  company: Raytheon BBN
+  worked_date: May 2015 – August 2015
+  description: >
+    To be determined...
