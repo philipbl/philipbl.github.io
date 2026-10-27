@@ -1,6 +1,6 @@
 """Render index.html from _template.html and the CV data file.
 
-Usage: python build.py [path/to/cv_data.yml]
+Usage: python build.py [path/to/cv_data.yml] [output.html]
 """
 import pathlib
 import re
@@ -38,7 +38,7 @@ def authors(s):
     return " and ".join(names)
 
 
-def main(cv_path="../cv/cv_data.yml"):
+def main(cv_path="../cv/cv_data.yml", out_path="_site/index.html"):
     data = yaml.safe_load(pathlib.Path(cv_path).read_text())
     rank = {name: i for i, name in enumerate(PUB_ORDER)}
     data["publications"].sort(key=lambda g: rank.get(g["name"], len(PUB_ORDER)))
@@ -50,7 +50,9 @@ def main(cv_path="../cv/cv_data.yml"):
     )
     env.filters.update(clean=clean, authors=authors)
     html = env.get_template("_template.html").render(data)
-    pathlib.Path("index.html").write_text(html)
+    out = pathlib.Path(out_path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(html)
 
 
 if __name__ == "__main__":

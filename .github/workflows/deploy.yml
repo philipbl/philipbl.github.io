@@ -1,0 +1,84 @@
+name: Build and deploy
+
+on:
+  push:
+  # Sent by philipbl/cv when cv_data.yml changes.
+  repository_dispatch:
+    types: [cv-updated]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# One run per branch at a time; never cancel a deploy halfway through.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Check out CV data (private repo)
+        uses: actions/checkout@v7
+        with:
+          repository: philipbl/cv
+          token: ${{ secrets.CV_REPO_TOKEN }}
+          path: cv
+
+      - name: Install LaTeX and pandoc
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends texlive-latex-extra texlive-fonts-recommended texlive-plain-generic pandoc
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install Python packages
+        run: pip install jinja2 pyyaml nbconvert
+
+      - name: Build CV PDF and site
+        run: make build CV_DIR=cv PYTHON=python
+
+      - name: Run doctests
+        run: python -m doctest build.py
+
+      - name: Check internal links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --no-progress '_site/**/*.html'
+
+      - uses: actions/upload-pages-artifact@v5
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: _site
+
+      # Report only: publishers (IEEE, ACM) and LinkedIn often block bots, so
+      # 403/429/999 are accepted and failures don't stop the deploy.
+      - name: Report external links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --accept '200..=299,403,429,999'
+            --exclude '^https://fonts\.(googleapis|gstatic)\.com/?$'
+            '_site/**/*.html'
+          fail: false
+          jobSummary: true
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
