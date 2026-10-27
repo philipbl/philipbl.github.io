@@ -9,6 +9,10 @@ import sys
 import jinja2
 import yaml
 
+# Site order for publication groups (the CV keeps its own). Unlisted groups
+# follow in CV order.
+PUB_ORDER = ["Conference Publications", "Journal Articles", "Book Chapters"]
+
 
 def clean(s):
     r"""Strip the LaTeX that cv_data.yml carries for the PDF.
@@ -36,6 +40,8 @@ def authors(s):
 
 def main(cv_path="../cv/cv_data.yml"):
     data = yaml.safe_load(pathlib.Path(cv_path).read_text())
+    rank = {name: i for i, name in enumerate(PUB_ORDER)}
+    data["publications"].sort(key=lambda g: rank.get(g["name"], len(PUB_ORDER)))
     env = jinja2.Environment(
         loader=jinja2.FileSystemLoader("."),
         autoescape=True,
