@@ -8,9 +8,6 @@ import sys
 
 import jinja2
 import yaml
-from markupsafe import Markup, escape
-
-MY_NAMES = ("Philip Lundrigan", "Philip B. Lundrigan")
 
 
 def clean(s):
@@ -24,18 +21,17 @@ def clean(s):
 
 
 def authors(s):
-    """Normalize an author list to "A, B, and C" and bold my name.
+    """Normalize an author list to "A, B, and C".
 
     >>> authors(r"Ann Lee, Bo Li\\textsuperscript{2} and Philip Lundrigan")
-    Markup('Ann Lee, Bo Li, and <strong>Philip Lundrigan</strong>')
+    'Ann Lee, Bo Li, and Philip Lundrigan'
     >>> authors("Bo Li, Philip Lundrigan")
-    Markup('Bo Li and <strong>Philip Lundrigan</strong>')
+    'Bo Li and Philip Lundrigan'
     """
     names = [n.strip() for n in clean(s).replace(" and ", ",").split(",") if n.strip()]
-    names = [Markup("<strong>%s</strong>") % n if n in MY_NAMES else escape(n) for n in names]
     if len(names) > 2:
-        return Markup(", ").join(names[:-1]) + Markup(", and ") + names[-1]
-    return Markup(" and ").join(names)
+        return ", ".join(names[:-1]) + ", and " + names[-1]
+    return " and ".join(names)
 
 
 def main(cv_path="../cv/cv_data.yml"):

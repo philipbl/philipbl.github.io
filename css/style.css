@@ -205,11 +205,6 @@ h2 + h3 {
     font-size: 0.9375rem;
 }
 
-.authors strong {
-    color: var(--text);
-    font-weight: 600;
-}
-
 .venue {
     font-size: 0.875rem;
     font-style: italic;
