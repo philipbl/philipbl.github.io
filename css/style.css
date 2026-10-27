@@ -72,7 +72,7 @@ ul {
 
 h1 {
     margin: 0;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: -0.025em;
@@ -112,11 +112,10 @@ h2 {
     align-items: center;
     gap: 1rem;
     margin: 4rem 0 1.25rem;
-    color: var(--accent);
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
 }
 
 h2::after {
@@ -128,7 +127,8 @@ h2::after {
 
 h3 {
     margin: 2.5rem 0 1rem;
-    font-size: 1.1rem;
+    color: var(--accent);
+    font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: -0.01em;
 }
@@ -238,7 +238,12 @@ h2 + h3 {
     }
 
     h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
+    }
+
+    h2 {
+        margin-top: 3rem;
+        font-size: 1.5rem;
     }
 
     .courses li {
